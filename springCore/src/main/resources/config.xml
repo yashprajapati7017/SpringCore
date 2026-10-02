@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--            primative-->
+<!--    <bean name="student" class="com.springCore.Student">-->
+<!--        <property name="studentId" value="101"></property>-->
+<!--        <property name="studentName" value="ansul"></property>-->
+<!--        <property name="studentAddress" value="up"></property>-->
+<!--    </bean>-->
+
+
+<!--    -->
+<!--&lt;!&ndash;    collection&ndash;&gt;-->
+<!--    <bean name="employees" class="com.springCore.Employees">-->
+<!--        <property name="name" value="yash"/>-->
+
+
+<!--&lt;!&ndash;list&ndash;&gt;-->
+<!--        <property name="phone">-->
+<!--            <list>-->
+<!--                <value>78478957</value>-->
+<!--                <value>87974875</value>-->
+<!--                <value>47857489</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--&lt;!&ndash;set        &ndash;&gt;-->
+
+<!--        <property name="addreses">-->
+<!--            <set>-->
+<!--                <value>India</value>-->
+<!--                <value>up</value>-->
+<!--                <value>meerut</value>-->
+<!--            </set>-->
+<!--        </property>-->
+
+
+<!--&lt;!&ndash;map        &ndash;&gt;-->
+<!--        <property name="course">-->
+<!--            <map>-->
+<!--                <entry key="java" value="12mounth"/>-->
+<!--                <entry key="phyton" value="6 mounth"/>-->
+<!--                <entry key="c" value="6 mounth"/>-->
+<!--            </map>-->
+<!--        </property>-->
+
+<!--&lt;!&ndash;property&ndash;&gt;-->
+
+<!--        <property name="p1">-->
+<!--            <props>-->
+<!--                <prop key="expriesce java">5mounth</prop>-->
+<!--                <prop key="exprience phyton">1 mounth</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+
+<!--    </bean>-->
+
+        <bean name="b" class="com.springCore.B">
+            <property name="y" value="25"/>
+        </bean>
+
+        <bean name="a" class="com.springCore.A">
+            <property name="x" value="24" />
+            <property name="ob" ref="b"/>
+        </bean>
+
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="certificate" class="com.springCore.Certificate">
+        <constructor-arg name="cert" value="Java" />
+    </bean>
+
+    <bean name="person" class="com.springCore.Person">
+        <constructor-arg value="yash"  />
+        <constructor-arg value="20"/>
+        <constructor-arg ref="certificate"/>
+    </bean>
+
+    <bean name="demo" class="com.springCore.demoConstructor">
+        <constructor-arg value="8" type="double"/>
+        <constructor-arg value="9" type="double"/>
+    </bean>
+
+</beans>

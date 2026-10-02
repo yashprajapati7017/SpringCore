@@ -19,4 +19,8 @@ public class demoConstructor {
     public int sum(){
         return a+b;
     }
+
+    public double sum(double a , double b){
+        return a + b;
+    }
 }

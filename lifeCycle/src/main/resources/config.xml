@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean name="foodShop" class="com.springCore.FoodShop" init-method="init" destroy-method="destroyed">-->
+<!--        <property name="samosa" value="25"/>-->
+<!--        <property name="pizza" value="500"/>-->
+<!--    </bean>-->
+
+<!--        <bean name="clothShop" class="com.springCore.ClothShop">-->
+<!--            <property name="shurt" value="1000"/>-->
+<!--            <property name="tShurt" value="1200"/>-->
+<!--        </bean>-->
+
+
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:context="http://www.springframework.org/schema/context"
+           xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+
+        <context:annotation-config/>
+        <bean name="toyShop" class="com.springCore.ToyShop">
+            <property name="car" value="500"/>
+            <property name="bike" value="400"/>
+        </bean>
+    </beans>
+</beans>

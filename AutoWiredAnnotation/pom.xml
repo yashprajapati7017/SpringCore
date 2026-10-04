@@ -5,12 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.springCore</groupId>
-    <artifactId>ConstructorInj</artifactId>
+    <artifactId>AutoWiredAnnotation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
     <dependencies>
-        <!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-core -->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.21</version>
+            <scope>compile</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -18,15 +25,7 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-context -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>6.1.21</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
-
 
 
     <properties>

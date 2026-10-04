@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:list list-class="java.util.LinkedList" id="nameList">
+
+            <value>yash</value>
+            <value>aayush</value>
+            <value>ankit</value>
+            <value>raman</value>
+            <value>rahul</value>
+    </util:list>
+
+    <util:map id="fessStructor" map-class="java.util.HashMap">
+        <entry key="Java" value="3000"/>
+        <entry key="Phyton" value="3000"/>
+        <entry key="c" value="2000"/>
+        <entry key="c++" value="3000"/>
+    </util:map>
+
+
+    <bean name="text" class="com.springCore.Text">
+        <property name="list" ref="nameList"/>
+        <property name="fessStructor" ref="fessStructor"/>
+    </bean>
+
+</beans>
